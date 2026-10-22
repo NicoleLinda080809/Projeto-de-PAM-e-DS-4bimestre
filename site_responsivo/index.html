@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Violet+ | Cinema</title>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style_responsivo.css">
+</head>
+
+<body>
+
+
+    <!--HEADER COM BARRA DE NAVEGAÇÃO-->
+    <header class="header">
+        <a href="#inicio" class="logo">
+            <img src="imgs/Violet.png" alt="Violet+">
+        </a>
+
+        <div class="busca">
+            <i data-lucide="search"></i>
+            <input type="search" placeholder="Buscar filmes...">
+        </div>
+    </header>
+
+
+    <!--HERO (SESSÃO DE CIMA, QUE FICA APARECENDO OS FILMES)-->
+    <main id="inicio">
+
+        <section class="hero">
+            <div class="hero-text">
+                <span class="destaque">DESTAQUE DA SEMANA</span>
+
+                <h1>AVATAR: <span>O CAMINHO DA ÁGUA</span></h1>
+
+                <div class="info-filme">
+                    <span>2022</span>
+                    <span>Ficção científica</span>
+                    <span>3h 12min</span>
+                </div>
+
+                <p>
+                    Jake Sully e Neytiri precisam proteger sua família
+                    quando uma antiga ameaça retorna a Pandora.
+                    Uma jornada extraordinária por um mundo repleto
+                    de beleza, aventura e descobertas.
+                </p>
+
+                <a href="#filmes" class="btn">
+                    <i data-lucide="ticket"></i>
+                    Explorar filmes
+                </a>
+            </div>
+
+            <div class="hero-poster">
+                <img
+                    src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
+                    alt="Pôster de Avatar: O Caminho da Água"
+                >
+            </div>
+        </section>
+
+        <section class="section" id="filmes">
+            <div class="section-header">
+                <div>
+                    <span class="subtitulo">ESCOLHA SEU PRÓXIMO FILME</span>
+                    <h2>Em cartaz</h2>
+                </div>
+            </div>
+            
+            <!--OS CARS DOS FILMES-->
+            
+     <div class="cards">
+
+      <article class="card">
+        <div class="poster">
+            <a href="filme.html?id=estranho" aria-label="Ver Doutor Estranho">
+                <img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg"
+                     alt="Doutor Estranho no Multiverso da Loucura">
+            </a>
+            <button class="ver-mais" data-filme="estranho"
+                    aria-label="Adicionar Doutor Estranho ao carrinho">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+        <div class="card-info">
+            <h3><a href="filme.html?id=estranho">Doutor Estranho</a></h3>
+            <p>Fantasia • Aventura</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="poster">
+            <a href="filme.html?id=aranha" aria-label="Ver Homem-Aranha">
+                <img src="https://image.tmdb.org/t/p/w500/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg"
+                     alt="Homem-Aranha no Aranhaverso">
+            </a>
+            <button class="ver-mais" data-filme="aranha"
+                    aria-label="Adicionar Homem-Aranha ao carrinho">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+        <div class="card-info">
+            <h3><a href="filme.html?id=aranha">Homem-Aranha</a></h3>
+            <p>Animação • Ação</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="poster">
+            <a href="filme.html?id=mario" aria-label="Ver Super Mario Bros.">
+                <img src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+                     alt="Super Mario Bros.">
+            </a>
+            <button class="ver-mais" data-filme="mario"
+                    aria-label="Adicionar Super Mario Bros. ao carrinho">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+        <div class="card-info">
+            <h3><a href="filme.html?id=mario">Super Mario Bros.</a></h3>
+            <p>Animação • Aventura</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="poster">
+            <a href="filme.html?id=megan" aria-label="Ver M3GAN">
+                <img src="https://play-lh.googleusercontent.com/s2X37G5Tu8WH_Ox3gikRbHAe0R2BGGRcsHI39yXZpCQSP9os1Q2WynPLDOPk6Fye3CMMZwKbTsEzB9SQebo"
+                     alt="M3GAN">
+            </a>
+            <button class="ver-mais" data-filme="megan"
+                    aria-label="Adicionar M3GAN ao carrinho">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+        <div class="card-info">
+            <h3><a href="filme.html?id=megan">M3GAN</a></h3>
+            <p>Terror • Suspense</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="poster">
+            <a href="filme.html?id=diabo" aria-label="Ver O Diabo Veste Prada 2">
+                <img src="https://ingresso-a.akamaihd.net/prd/img/movie/o-diabo-veste-prada-2/4e042f1b-0072-4560-96f9-409c59dd0da2.webp"
+                     alt="O Diabo Veste Prada 2">
+            </a>
+            <button class="ver-mais" data-filme="diabo"
+                    aria-label="Adicionar O Diabo Veste Prada 2 ao carrinho">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+        <div class="card-info">
+            <h3><a href="filme.html?id=diabo">O Diabo Veste Prada 2</a></h3>
+            <p>Comédia • Drama</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="poster">
+            <a href="filme.html?id=empregada" aria-label="Ver A Empregada">
+                <img src="https://ingresso-a.akamaihd.net/prd/img/movie/a-empregada/4e37e5ca-5b88-4eee-8bee-07842a605e2f.webp"
+                     alt="A Empregada">
+            </a>
+            <button class="ver-mais" data-filme="empregada"
+                    aria-label="Adicionar A Empregada ao carrinho">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+        <div class="card-info">
+            <h3><a href="filme.html?id=empregada">A Empregada</a></h3>
+            <p>Drama • Suspense</p>
+        </div>
+    </article>
+
+</div>
+
+
+    <!-- NAVEGAÇÃO FIXA -->
+    <footer class="bottom-nav">
+        <a href="#filmes" class="nav-item ativo" aria-current="page">
+            <i data-lucide="clapperboard"></i>
+            <span>Filmes</span>
+        </a>
+
+        <a href="carrinho.html" class="nav-item">
+            <i data-lucide="shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+
+        <a href="perfil.html" class="nav-item">
+            <i data-lucide="user-round"></i>
+            <span>Perfil</span>
+        </a>
+    </footer>
+
+    <!--BIBLIOTECA DE INCONES-->
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

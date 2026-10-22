@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Violet+ | Carrinho</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style_responsivo.css">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html#inicio" class="logo">
+            <img src="imgs/Violet.png" alt="Violet+">
+        </a>
+
+        <a href="index.html#filmes" class="voltar">
+            <i data-lucide="arrow-left"></i>
+            Continuar explorando
+        </a>
+    </header>
+
+    <main class="carrinho-container">
+
+        <section class="titulo-pagina">
+            <span class="subtitulo">SUA EXPERIÊNCIA NO VIOLET+</span>
+            <h1>Meu carrinho<span>.</span></h1>
+            <p>Confira seus ingressos antes de finalizar o pedido.</p>
+        </section>
+
+        <div class="carrinho-layout">
+
+            <section class="lista-carrinho">
+                <div class="lista-header">
+                    <h2>Seus ingressos</h2>
+                    <span id="quantidade-itens">0 itens</span>
+                </div>
+
+                <div id="itens-carrinho"></div>
+
+                <div id="carrinho-vazio" class="carrinho-vazio">
+                    <i data-lucide="ticket"></i>
+                    <h3>Seu carrinho está vazio</h3>
+                    <p>Que tal encontrar um filme para sua próxima sessão?</p>
+                    <a href="index.html#filmes" class="btn">
+                        Explorar filmes
+                    </a>
+                </div>
+            </section>
+
+            <aside class="resumo">
+                <h2>Resumo do pedido</h2>
+
+                <div class="resumo-linha">
+                    <span>Ingressos</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+
+                <div class="resumo-linha">
+                    <span>Taxa de serviço</span>
+                    <span id="taxa">R$ 0,00</span>
+                </div>
+
+                <div class="resumo-linha total">
+                    <span>Total</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+
+                <button id="finalizar" class="btn-finalizar" disabled>
+                    Finalizar pedido
+                    <i data-lucide="arrow-right"></i>
+                </button>
+
+                <p class="aviso">
+                    <i data-lucide="shield-check"></i>
+                    Revise seu pedido antes de continuar.
+                </p>
+
+                <a href="index.html#filmes" class="continuar">
+                    Continuar comprando
+                </a>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer class="bottom-nav">
+        <a href="index.html#filmes" class="nav-item">
+            <i data-lucide="clapperboard"></i>
+            <span>Filmes</span>
+        </a>
+
+        <a href="carrinho.html" class="nav-item ativo" aria-current="page">
+            <i data-lucide="shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+
+        <a href="perfil.html" class="nav-item">
+            <i data-lucide="user-round"></i>
+            <span>Perfil</span>
+        </a>
+    </footer>
+
+    <script src="carrinho.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
